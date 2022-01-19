@@ -1,4 +1,3 @@
-import { ThreeSixty } from "@material-ui/icons";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Item from "./Item";
@@ -25,7 +24,7 @@ class Album extends Component {
 
   componentDidUpdate = (prevProps, prevState) => {
     if (
-      prevState.items.length !=
+      prevState.items.length !==
       this.props.item.data
         .filter((x) => x.albumId === this.props.alb.id)
         .slice(0, 10)
